@@ -1,0 +1,41 @@
+{
+    "coord": {
+        "lon": 51.4215,
+        "lat": 35.6944
+    },
+    "weather": [{
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03d"
+    }],
+    "base": "stations",
+    "main": {
+        "temp": 280.77,
+        "feels_like": 279.77,
+        "temp_min": 280.77,
+        "temp_max": 281.14,
+        "pressure": 1022,
+        "humidity": 31
+    },
+    "visibility": 6000,
+    "wind": {
+        "speed": 1.79,
+        "deg": 140
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1639732397,
+    "sys": {
+        "type": 2,
+        "id": 47737,
+        "country": "IR",
+        "sunrise": 1639712284,
+        "sunset": 1639747369
+    },
+    "timezone": 12600,
+    "id": 112931,
+    "name": "Tehran",
+    "cod": 200
+}

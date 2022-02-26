@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'vazir';
+    /* width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.weatherApp {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/wallpaper\ rainy\ day\ wallpaper\ rainy\ day\ photo\ rainy\ day\ image.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.weatherApp .main {
+    width: 65%;
+    height: 100%;
+}
+
+.main .main-description {
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.main-description .main-temperature {
+    font-size: 110px;
+    font-weight: 500;
+}
+
+.main-description .main-city-info {
+    margin: 20px;
+}
+
+.main-description .main-city-info h2 {
+    font-size: 55px;
+}
+
+.main-description .main-city-info p {
+    margin-top: -15px;
+}
+
+.main-description .main-city-weathers {
+    text-align: center;
+}
+
+.main-description .main-city-weathers span {
+    font-size: 45px;
+}
+
+.main-description .main-city-weathers p {
+    margin-top: -5px;
+}
+
+.weatherApp .sideBar {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, rgba(54, 101, 137, .9), rgba(54, 101, 137, .8)); */
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.sideBar .search-location {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 90px;
+    padding-left: 50px;
+}
+
+.search-location .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    font-size: 25px;
+    background-color: #A9CEE1;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-location .search-input {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    font-size: 22px;
+    padding-left: 10px;
+    color: #fff;
+    width: 60%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+
+.search-input::placeholder {
+    color: #8FABBE;
+}
+
+.search-location span {
+    position: absolute;
+    bottom: -30px;
+    color: red;
+    font-size: 14px;
+}
+
+.sideBar .week {
+    margin-top: 150px;
+    width: 100%;
+    padding: 0 50px;
+    color: #fff;
+}
+
+.sideBar h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.week .future-days {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.future-days section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.future-days section p {
+    font-size: 18px;
+}
+
+.future-days section p span {
+    font-size: 15px;
+    color: #a8a8b1;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+    margin: 30px 0;
+}
+
+.sideBar .weather-details {
+    padding: 0 50px;
+    color: #fff;
+}
+
+.weather-details .weather-details-content section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-details-content section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.city-title,
+.status-title,
+.wind-speed-title,
+.max-temperature-title,
+.min-temperature-title {
+    color: #a8a8b1;
+}
+
+.responsive {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    background-color: black;
+}
+
+.responsive h1,
+.responsive h2 {
+    color: rgb(255, 157, 0);
+}
+
+@media only screen and (max-width: 1100px) {
+    .weatherApp {
+        display: none !important;
+    }
+
+    .responsive {
+        display: flex !important;
+    }
+
+    .responsive h1,
+    .responsive h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
